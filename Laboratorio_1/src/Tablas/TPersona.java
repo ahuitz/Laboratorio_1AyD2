@@ -4,12 +4,15 @@
  * and open the template in the editor.
  */
 package Tablas;
-
+import javax.persistence.*;
+import java.io.Serializable;
 /**
  *
  * @author EST1659109
  */
-public class TPersona {
+public class TPersona implements Serializable{
+    @Id
+    private int id;
     private String nombre;
     private String apellido;
     private boolean conectado;
@@ -17,6 +20,14 @@ public class TPersona {
     public TPersona() {
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+    
     public String getNombre() {
         return nombre;
     }
