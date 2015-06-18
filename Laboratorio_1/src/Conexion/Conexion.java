@@ -32,4 +32,8 @@ public final class  Conexion {
         EntityManager em = emf.createEntityManager();
         return null;
     }   
+    
+    private Conexion(){
+        
+    }
  }

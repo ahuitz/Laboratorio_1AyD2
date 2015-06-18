@@ -5,18 +5,22 @@
  */
 package laboratorio_1;
 import Conexion.Conectar;
+import Conexion.Conexion;
 /**
  *
- * @author EST1659109
+ * @author Cliente
  */
-public class Laboratorio_1 {
+public class CLI implements Conectar {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    @Override
+    public void update() {
+      
+    }
+    public void mostar(){
         
     }
     
+    public void modificar(){
+        
+    }
 }
