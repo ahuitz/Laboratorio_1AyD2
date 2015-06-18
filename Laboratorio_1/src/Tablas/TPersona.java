@@ -10,6 +10,7 @@ import java.io.Serializable;
  *
  * @author EST1659109
  */
+@Entity
 public class TPersona implements Serializable{
     @Id
     private int id;
