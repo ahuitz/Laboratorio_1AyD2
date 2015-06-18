@@ -5,6 +5,10 @@
  */
 package Observer;
 
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
 /**
  *
  * @author Cliente
@@ -22,6 +26,12 @@ public class main {
         Observador ob2 = new Observador(o);
         
         o.setF(45.);
+        
+        
+        EntityManagerFactory emf=Persistence.createEntityManagerFactory("Laboratorio_1JPA");
+        EntityManager em=emf.createEntityManager();
+        
+        emf.close();
     }
     
 }
